@@ -24,7 +24,7 @@ deploy:
 	$(call terraform-apply, ./infra)
 
 destroy:
-	$(call terraform-destroy, ./infra) && rm infra/*tfstate
+	$(call terraform-destroy, ./infra)
 
 login:
 	az login
