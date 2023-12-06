@@ -1,5 +1,4 @@
 # Secrets
-*config*.y*ml
 *env.*
 *env
 !.env.sample
