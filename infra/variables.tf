@@ -5,7 +5,7 @@ variable "azure_suffix" {
 
 variable "gh_pat" {
   type        = string
-  description = "GitHub personal access token with repo:admin"
+  description = "GitHub personal access token with repo:admin and actions:read"
 }
 
 variable "gh_repository" {

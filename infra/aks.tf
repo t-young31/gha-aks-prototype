@@ -9,9 +9,11 @@ resource "azurerm_kubernetes_cluster" "sample" {
   }
 
   default_node_pool {
-    name       = "agentpool"
-    vm_size    = "Standard_B2s"
-    node_count = 1
+    name                = "agentpool"
+    vm_size             = "Standard_B2s"
+    enable_auto_scaling = true
+    min_count           = 1
+    max_count           = 2
   }
 
   network_profile {
