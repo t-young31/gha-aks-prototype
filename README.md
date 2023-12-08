@@ -6,7 +6,7 @@ Azure kubernetes (AKS)
 > Not production ready
 
 ## Usage
-0. Create a `.env` file from `.env.sample`
+0. Create a `.env` file from `.env.sample`. The GitHub personal access token (`TF_VAR_gh_pat`) can be fine-grained and requires Repositroy:Administration and Repositroy:Action
 1. Login to Azure and deploy with
 ```bash
 make login
